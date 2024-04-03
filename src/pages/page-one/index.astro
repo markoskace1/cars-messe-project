@@ -1,0 +1,290 @@
+---
+
+---
+
+<script>
+    // import function to register Swiper custom elements
+    import { register } from 'swiper/element/bundle'
+    // register Swiper custom elements
+    register()
+
+    const swiperEl = document.querySelector('swiper-container')
+
+    const params = {
+        // array with CSS styles
+
+        injectStyles: [
+            `
+
+        .swiper-pagination {
+            top: -30px;
+        }
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            background-color: #EC6B2F;
+        }
+      
+    `,
+        ],
+    }
+
+    Object.assign(swiperEl, params)
+
+    swiperEl.initialize()
+</script>
+
+<!-- This header can be later replaced with Layout -->
+<header class="bg-[url('/studio-room.jpg')] relative min-h-screen bg-no-repeat bg-cover bg-bottom z-20">
+    <nav class="flex container mx-auto justify-between py-4 items-center">
+        <div class="text-white font-bold text-2xl">
+            <img src="/logo-cb-top.png" alt="" />
+        </div>
+        <div class="">
+            <ul class="flex space-x-8 uppercase items-center">
+                <li class="text-white font-bold">Besucher</li>
+                <li class="text-white font-bold">Aussteller</li>
+                <li class="bg-orange-500 px-6 py-3 shadow-black rounded text-white font-bold">Zur Messe</li>
+                <li class="text-white font-bold">Stellen</li>
+                <li class="text-white font-bold">Speaker</li>
+                <li class="text-white font-bold">Agenda</li>
+            </ul>
+        </div>
+        <div class="text-white font-bold text-2xl">12 | 22 | 22 | 44</div>
+    </nav>
+    <div class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute"><h1 class="text-8xl text-white font-bold stroke-orange-500 stroke- uppercase">Messeplattform</h1></div>
+    <div><img class="w-full absolute bottom-0" src="/bg-tear.png" alt="" /></div>
+    <div class="absolute top-0 bg-gradient-to-t from-black to-[#EC6B2F] from-65% w-full h-full opacity-90 -z-10"></div>
+</header>
+
+<section class="container mx-auto mt-[50px] pb-[60px]">
+    <div class="grid grid-cols-2 gap-24">
+        <div class="flex flex-col space-y-5">
+            <span class="w-32 h-[5px] bg-orange-500"></span>
+            <h2 class="text-[32px] text-orange-500 font-bold uppercase">LOREM IPSUM</h2>
+            <div>
+                <h3 class="text-base font-bold uppercase">Lorem ipsum</h3>
+
+                <p class="text-base font-medium">
+                    Lorem ipsum dolor sit amet consectetur. Vitae a enim viverra quis porttitor. Elementum donec sed aliquam amet dignissim sit sit sed. Morbi pretium tellus enim arcu gravida ante
+                    ultrices purus risus. Tempor venenatis nec mauris non augue iaculis. Posuere suscipit aenean enim donec vel scelerisque accumsan tempus semper. Tincidunt nunc eu urna tristique
+                    aenean massa consequat.
+                </p>
+            </div>
+        </div>
+        <div class="relative w-fit h-fit z-10">
+            <img src="/blue-porsche.png" alt="blue porsche" width="484px" height="219px" class="w-[484px] h-[219px] object-cover" />
+            <div class="absolute -bottom-7 -right-7 w-[393px] h-[192px] bg-orange-500/50 -z-10"></div>
+        </div>
+    </div>
+</section>
+
+<section class="flex flex-col bg-black py-20 uppercase items-center">
+    <h1 class="text-orange-500 font-bold text-[32px] mb-16">Erlebt die interaktive Vielfalt in unseren Showrooms</h1>
+
+    <!-- Autos Carousel  -->
+    <swiper-container init="false" slides-per-view="auto" pagination="true" pagination-clickable="true" initial-slide="1" centered-slides="true" class="flex flex-row space-x-[60px] w-full">
+        <swiper-slide class="relative flex items-center justify-center w-[610px] mb-20">
+            <img src="/white-lambo.jpg" width="610px" height="581px" alt="VW autos showroom" class="aspect-square object-cover w-full h-[580px] rounded-[20px]" />
+            <button type="button" class="absolute bottom-5 right-7 text-white text-[32px] font-semibold px-9 py-[6px] uppercase bg-orange-500 rounded-[5px]">Small</button>
+        </swiper-slide>
+        <swiper-slide class="relative flex items-center justify-center w-[610px] mb-20">
+            <img src="/vw-autos.jpg" width="610px" height="581px" alt="VW autos showroom" class="aspect-square object-cover w-full h-[580px] rounded-[20px]" />
+            <button type="button" class="absolute bottom-5 right-7 text-white text-[32px] font-semibold px-9 py-[6px] uppercase bg-orange-500 rounded-[5px]">Medium</button>
+        </swiper-slide>
+        <swiper-slide class="relative flex items-center justify-center w-[610px] mb-20">
+            <img src="/white-porsche.jpg" width="610px" height="581px" alt="VW autos showroom" class="aspect-square object-cover w-full h-[580px] rounded-[20px]" />
+            <button type="button" class="absolute bottom-5 right-7 text-white text-[32px] font-semibold px-9 py-[6px] uppercase bg-orange-500 rounded-[5px]">Large</button>
+        </swiper-slide>
+    </swiper-container>
+
+    <button type="button" class="flex items-center gap-6 text-orange-500 text-xl font-medium uppercase bg-[#d9d9d9] rounded-[10px] mt-8 pl-16 pr-9 py-4"
+        >Mehr Infos <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"
+            ><path fill="none" stroke="rgb(255 90 31)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M36 18L24 30L12 18"></path></svg
+        ></button
+    >
+</section>
+
+<!-- Features -->
+
+<section class="flex flex-col bg-black w-full -mt-1 py-32 space-y-20">
+    <!-- Block 1 -->
+    <div class="container mx-auto grid grid-cols-2 gap-20 items-center">
+        <div class="flex flex-col gap-5">
+            <span class="w-32 h-[5px] bg-orange-500"></span>
+            <h3 class="text-2xl font-bold text-orange-500">Interaktive Kommunikationsmöglichkeiten</h3>
+            <p class="text-white text-xl">
+                Nutzer können über Videochat, Sprachchat oder Textnachrichten direkt mit den Ausstellern kommunizieren. Die Interaktion kann von beiden Seiten jederzeit gestartet werden, um Fragen zu
+                stellen oder Informationen auszutauschen.
+            </p>
+        </div>
+        <div class="relative w-fit h-fit z-10">
+            <img src="/team-meeting.jpg" alt="team meeting online" width="566px" height="149px" class="w-[566px] h-[150px] object-cover" />
+            <div class="absolute -bottom-[26px] -right-[85px] w-[457px] h-[138px] bg-orange-500/20 -z-10"></div>
+        </div>
+    </div>
+
+    <!-- Block 2 -->
+    <div class="container mx-auto grid grid-cols-2 gap-20 items-center">
+        <div class="flex flex-col gap-5 order-last">
+            <span class="w-32 h-[5px] bg-orange-500"></span>
+            <h3 class="text-2xl font-bold text-orange-500">Vielseitige Interactionpoints</h3>
+            <p class="text-white text-xl">
+                Unsere Showrooms bieten verschiedene Interaktionspunkte, darunter die Einblendung von PDF-Dokumenten, interaktive Elemente sowie eindrucksvolle Imagefilme. Dadurch können Nutzer tiefer
+                in die Inhalte eintauchen und ein umfassenderes Verständnis erhalten.
+            </p>
+        </div>
+        <div class="relative w-fit h-fit z-10 place-self-end">
+            <img src="/kontakt-image.jpg" alt="team meeting online" width="577px" height="170px" class="w-[577px] h-[170px] object-cover" />
+            <div class="absolute -bottom-[26px] -left-[85px] w-[457px] h-[138px] bg-orange-500/20 -z-10"></div>
+        </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="container mx-auto grid grid-cols-2 gap-20 items-center">
+        <div class="flex flex-col gap-5">
+            <span class="w-32 h-[5px] bg-orange-500"></span>
+            <h3 class="text-2xl font-bold text-orange-500">3D-Modell-Nutzung</h3>
+            <p class="text-white text-xl">
+                Die Showrooms präsentieren Produkte und Fahrzeuge mit realistischen 3D-Modellen. Nutzer können diese Modelle aus verschiedenen Blickwinkeln betrachten, Details erkunden und so ein
+                immersives Erlebnis genießen, das weit über herkömmliche Präsentationen hinausgeht.
+            </p>
+        </div>
+        <div class="relative w-fit h-fit z-10">
+            <img src="/formula-model.jpg" alt="team meeting online" width="569px" height="175px" class="w-[569px] h-[175px] object-cover" />
+            <div class="absolute -bottom-[26px] -right-[85px] w-[457px] h-[138px] bg-orange-500/20 -z-10"></div>
+        </div>
+    </div>
+
+    <!-- Block 4 -->
+    <div class="container mx-auto grid grid-cols-2 gap-20 items-center">
+        <div class="flex flex-col gap-5 order-last">
+            <span class="w-32 h-[5px] bg-orange-500"></span>
+            <h3 class="text-2xl font-bold text-orange-500">Live-Demonstrationen und Produktvorführungen</h3>
+            <p class="text-white text-xl">
+                Aussteller bieten live Demonstrationen und Produktvorführungen an, um die Funktionsweise ihrer Produkte oder Dienstleistungen direkt zu präsentieren und Fragen in Echtzeit zu
+                beantworten.
+            </p>
+        </div>
+        <div class="relative w-fit h-fit z-10 place-self-end">
+            <img src="/stage-talk.jpg" alt="team meeting online" width="577px" height="121px" class="w-[577px] h-[121px] object-cover" />
+            <div class="absolute -bottom-[26px] -left-[85px] w-[457px] h-[138px] bg-orange-500/20 -z-10"></div>
+        </div>
+    </div>
+
+    <!-- Block 5 -->
+    <div class="container mx-auto grid grid-cols-2 gap-20 items-center">
+        <div class="flex flex-col gap-5">
+            <span class="w-32 h-[5px] bg-orange-500"></span>
+            <h3 class="text-2xl font-bold text-orange-500">Persönliche Beratung</h3>
+            <p class="text-white text-xl">
+                Nutzer haben die Möglichkeit, persönliche Beratungsgespräche mit den Ausstellern zu führen, um individuelle Fragen zu klären oder spezifische Anforderungen zu besprechen.
+            </p>
+        </div>
+        <div class="relative w-fit h-fit z-10">
+            <img src="/brainstorming-laptop.jpg" alt="team meeting online" width="569px" height="127px" class="w-[569px] h-[127px] object-cover" />
+            <div class="absolute -bottom-[26px] -right-[85px] w-[457px] h-[138px] bg-orange-500/20 -z-10"></div>
+        </div>
+    </div>
+
+    <!-- Block 6 -->
+    <div class="container mx-auto grid grid-cols-2 gap-20 items-center">
+        <div class="flex flex-col gap-5 order-last">
+            <span class="w-32 h-[5px] bg-orange-500"></span>
+            <h3 class="text-2xl font-bold text-orange-500">Networking-Möglichkeiten</h3>
+            <p class="text-white text-xl">
+                Neben der Interaktion mit Ausstellern können Nutzer auch mit anderen Besuchern der Showrooms interagieren, um sich über Trends und Entwicklungen auszutauschen und potenzielle
+                Geschäftspartner zu treffen.
+            </p>
+        </div>
+        <div class="relative w-fit h-fit z-10 place-self-end">
+            <img src="/join-online.jpg" alt="team meeting online" width="577px" height="146px" class="w-[577px] h-[146px] object-cover" />
+            <div class="absolute -bottom-[26px] -left-[85px] w-[457px] h-[138px] bg-orange-500/20 -z-10"></div>
+        </div>
+    </div>
+
+    <!-- Block 7 -->
+    <div class="container mx-auto grid grid-cols-2 gap-20 items-center">
+        <div class="flex flex-col gap-5">
+            <span class="w-32 h-[5px] bg-orange-500"></span>
+            <h3 class="text-2xl font-bold text-orange-500">Spezielle Aktionen und Angebote</h3>
+            <p class="text-white text-xl">
+                In den Showrooms werden auch spezielle Aktionen, Rabatte oder exklusive Angebote präsentiert, die ausschließlich während der Cars & Bytes-Veranstaltung verfügbar sind.
+            </p>
+        </div>
+        <div class="relative w-fit h-fit z-10">
+            <img src="/shake-hands.jpg" alt="team meeting online" width="569px" height="132px" class="w-[569px] h-[132px] object-cover" />
+            <div class="absolute -bottom-[26px] -right-[85px] w-[457px] h-[138px] bg-orange-500/20 -z-10"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Cars & Bytes Beispielstand -->
+<section class="w-full bg-black">
+    <div class="bg-orange-500 py-[72px] text-center">
+        <h2 class="text-[32px] text-white font-bold uppercase">Der Cars & Bytes Beispielstand</h2>
+    </div>
+
+    <div class="container mx-auto grid grid-cols-2 gap-20 bg-black py-[75px]">
+        <div class="text-white text-xl">
+            <p class="mb-5">
+                Besuchen Sie unseren Beispielstand der Cars & Bytes und erhalten Sie einen ersten Einblick in das, was unsere Partner in unterschiedlichen Aufmachungsmustern zwischen dem 31.05.2024
+                und 07.06.2024 bieten werden.
+            </p>
+            <p>
+                Der Showroom bietet die optimale Möglichkeit, um sich auf die digitale Erlebniswelt der Cars & Bytes im Frühsommer nächsten Jahres vorzubereiten und einen Vorgeschmack darauf zu
+                bekommen, was Euchwährend der Veranstaltung erwartet.
+            </p>
+        </div>
+        <div class="relative">
+            <img src="/kontakt-image.jpg" alt="kontakt image" width="620px" height="341px" class="w-[620px] h-[341px]" />
+            <span class="absolute bottom-5 left-10 text-[32px] text-white uppercase">Der Cars & Bytes Beispielstand</span>
+        </div>
+    </div>
+</section>
+
+<!-- Full-width orange div -->
+<div class="w-full h-16 bg-black">
+    <div class="w-full h-full bg-orange-500/50"></div>
+</div>
+
+<!-- Aussteller werden -->
+<section class="bg-black py-[68px]">
+    <div class="relative grid grid-cols-2 container mx-auto space-x-24">
+        <div class="flex flex-col max-w-2xl space-y-16">
+            <h2 class="text-[32px] bg-orange-500 text-[#f5f5f5] py-[14px] px-12 uppercase font-bold w-fit">Aussteller werden!</h2>
+            <p class="text-white font-medium text-base mb-[60px]">
+                Sie möchten mit Ihrem Unternehmen an der <span class="font-bold text-orange-500">Cars & Bytes 2024</span> teilnehmen? Dann sichern Sie sich bereits jetzt einen der limitierten Plätze
+                für das kommende Jahr. Nutzen Sie hierfür unsere Kontaktmöglichkeit. Das Cars & Bytes-Team wird sich mit Ihnen in Verbindung setzen und sich mit Ihnen über mögliche Gestaltungskonzepte
+                austauschen.
+            </p>
+        </div>
+        <div class="relative z-10">
+            <img src="/green-porsche.jpg" alt="green porsche" class="right-0 w-[574px] h-[319px] object-cover" />
+            <div class="absolute -bottom-8 -right-[45px] w-[294px] h-[264px] bg-orange-500/20 -z-10"></div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER - I recommend to copy it into layout and delete it here -->
+<footer class="bg-black w-full pt-[50px] -mt-[1px]">
+    <div class="flex container mx-auto justify-between items-center border-t-[1px] border-orange-500">
+        <p class="flex items-center gap-1 text-sm font-medium text-[#eaeaea]"><span class="text-2xl">&copy;</span> 2023, Peppermint Digital GmBh</p>
+
+        <div class="flex-col flex-1 space-y-[6px] py-[9px] justify-self-end">
+            <ul class="flex space-x-11 text-sm font-medium text-[#f5f5f5] justify-end">
+                <li><a href="/">UBER UNS</a></li>
+                <li><a href="/">PRESSE</a></li>
+                <li><a href="/">VLOG</a></li>
+                <li><a href="/">IMPRESSUM</a></li>
+            </ul>
+            <ul class="flex space-x-11 text-sm font-medium text-[#f5f5f5] justify-end">
+                <li><a href="/">PODCAST</a></li>
+                <li><a href="/">TEAM</a></li>
+                <li><a href="/">DOWNLOADS</a></li>
+                <li><a href="/">DATENSCHUTZ</a></li>
+            </ul>
+        </div>
+        <button type="button" class="text-white uppercase text-base font-semibold px-9 py-[6px] bg-[#909090] rounded-[5px] ml-[25px]">Kontakt</button>
+    </div>
+</footer>

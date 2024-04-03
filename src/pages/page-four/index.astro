@@ -1,0 +1,310 @@
+---
+
+---
+
+<!-- I've made a component for page header. Replace it with Layout. 
+I didn't use Layout, because it's different from other pages and doesn't have other props like image and page title -->
+<header
+  class="bg-[url('/kontakt.jpg')] relative min-h-screen bg-no-repeat bg-cover bg-bottom z-20"
+>
+  <nav class="flex container mx-auto justify-between py-4 items-center">
+    <div class="text-white font-bold text-2xl">
+      <img src="/logo-cb-top.png" alt="" />
+    </div>
+    <div class="">
+      <ul class="flex space-x-8 uppercase items-center">
+        <li class="text-white font-bold">Besucher</li>
+        <li class="text-white font-bold">Aussteller</li>
+        <li
+          class="bg-orange-500 px-6 py-3 shadow-black rounded text-white font-bold"
+        >
+          Zur Messe
+        </li>
+        <li class="text-white font-bold">Stellen</li>
+        <li class="text-white font-bold">Speaker</li>
+        <li class="text-white font-bold">Agenda</li>
+      </ul>
+    </div>
+    <div class="text-white font-bold text-2xl">12 | 22 | 22 | 44</div>
+  </nav>
+  <div class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute">
+    <h1
+      class="text-8xl text-white font-bold stroke-orange-500 stroke- uppercase"
+    >
+      Kontakt
+    </h1>
+  </div>
+  <div><img class="w-full absolute bottom-0" src="/bg-tear.png" alt="" /></div>
+  <div
+    class="absolute top-0 bg-gradient-to-t from-black to-[#EC6B2F] from-65% w-full h-full opacity-90 -z-10"
+  >
+  </div>
+</header>
+
+<main>
+  <!-- Kontakt page Hero section -->
+  <section class="container mx-auto my-12 space-y-5 text-center">
+    <h2 class="font-bold uppercase text-2xl text-orange-500">
+      Lorem ipsum lorem ipsum
+    </h2>
+    <p class="text-base font-medium">
+      Hier können Sie uns kontaktieren! Falls Sie Aussteller werden möchten,
+      klicken Sie bitter hier:
+    </p>
+    <button
+      class="bg-orange-500 px-6 py-3 drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded text-white font-bold uppercase"
+      >Aussteller werden</button
+    >
+  </section>
+
+  <!-- Allgemeine Frage section -->
+  <section class="bg-[url('/blue-porsche.png')] w-full h-full">
+    <div class="bg-black/90 py-[74px]">
+      <div
+        class="bg-orange-500 text-white py-4 mb-24 flex items-center justify-end w-3/12"
+      >
+        <h2 class="pr-8 text-[32px] uppercase font-bold">Allgemeine frage</h2>
+      </div>
+
+      <div class="flex container mx-auto gap-24">
+        <div class="flex flex-col max-w-[438px]">
+          <p class="text-white text-[20px] font-medium mb-9">
+            Lorem ipsum dolor sit amet consectetur. Lectus vehicula consectetur
+            erat massa a et. Lorem ipsum dolor sit amet consectetur. Lectus
+            vehicula consectetur erat massa a et.
+          </p>
+
+          <!-- E-mail -->
+          <div class="flex flex-row items-center gap-4 p-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 16 16"
+              ><path
+                fill="#ec6b2f"
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
+              ></path></svg
+            >
+            <p class="text-white text-[20px] font-medium">email@gmail.com</p>
+          </div>
+
+          <!-- Phone number -->
+          <div
+            class="flex flex-row items-center gap-4 border-[3px] border-orange-500 rounded-2xl p-6 bg-white/20"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 16 16"
+              ><path
+                fill="#ec6b2f"
+                fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42a18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+              ></path></svg
+            >
+            <p class="text-white text-[20px] font-medium">+123 456 789</p>
+          </div>
+
+          <!-- Location -->
+          <div class="flex flex-row items-center gap-4 p-6 mb-16">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              ><path
+                fill="#ec6b2f"
+                d="M14 2.25A9.75 9.75 0 0 1 23.75 12c0 4.12-2.895 8.61-8.61 13.518a1.75 1.75 0 0 1-2.283-.002l-.378-.328C7.017 20.408 4.25 16.028 4.25 12A9.75 9.75 0 0 1 14 2.25m0 6a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5"
+              ></path></svg
+            >
+            <p class="text-white text-[20px] font-medium">email@gmail.com</p>
+          </div>
+
+          <!-- PDF download and social icons -->
+          <div class="flex flex-row items-center">
+            <button
+              type="button"
+              class="text-white uppercase text-base font-semibold rounded-[5px] bg-orange-500 px-[10px] py-[6px] mr-[26px]"
+              >PDF download</button
+            >
+            <a href="https://www.facebook.com" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                class="mr-1"
+                ><path
+                  fill="white"
+                  d="M17 3.5a.5.5 0 0 0-.5-.5H14a4.77 4.77 0 0 0-5 4.5v2.7H6.5a.5.5 0 0 0-.5.5v2.6a.5.5 0 0 0 .5.5H9v6.7a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-6.7h2.62a.5.5 0 0 0 .49-.37l.72-2.6a.5.5 0 0 0-.48-.63H13V7.5a1 1 0 0 1 1-.9h2.5a.5.5 0 0 0 .5-.5Z"
+                ></path></svg
+              ></a
+            >
+            <a href="https://www.instagram.com" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                ><path
+                  fill="white"
+                  d="M17.34 5.46a1.2 1.2 0 1 0 1.2 1.2a1.2 1.2 0 0 0-1.2-1.2m4.6 2.42a7.59 7.59 0 0 0-.46-2.43a4.94 4.94 0 0 0-1.16-1.77a4.7 4.7 0 0 0-1.77-1.15a7.3 7.3 0 0 0-2.43-.47C15.06 2 14.72 2 12 2s-3.06 0-4.12.06a7.3 7.3 0 0 0-2.43.47a4.78 4.78 0 0 0-1.77 1.15a4.7 4.7 0 0 0-1.15 1.77a7.3 7.3 0 0 0-.47 2.43C2 8.94 2 9.28 2 12s0 3.06.06 4.12a7.3 7.3 0 0 0 .47 2.43a4.7 4.7 0 0 0 1.15 1.77a4.78 4.78 0 0 0 1.77 1.15a7.3 7.3 0 0 0 2.43.47C8.94 22 9.28 22 12 22s3.06 0 4.12-.06a7.3 7.3 0 0 0 2.43-.47a4.7 4.7 0 0 0 1.77-1.15a4.85 4.85 0 0 0 1.16-1.77a7.59 7.59 0 0 0 .46-2.43c0-1.06.06-1.4.06-4.12s0-3.06-.06-4.12M20.14 16a5.61 5.61 0 0 1-.34 1.86a3.06 3.06 0 0 1-.75 1.15a3.19 3.19 0 0 1-1.15.75a5.61 5.61 0 0 1-1.86.34c-1 .05-1.37.06-4 .06s-3 0-4-.06a5.73 5.73 0 0 1-1.94-.3a3.27 3.27 0 0 1-1.1-.75a3 3 0 0 1-.74-1.15a5.54 5.54 0 0 1-.4-1.9c0-1-.06-1.37-.06-4s0-3 .06-4a5.54 5.54 0 0 1 .35-1.9A3 3 0 0 1 5 5a3.14 3.14 0 0 1 1.1-.8A5.73 5.73 0 0 1 8 3.86c1 0 1.37-.06 4-.06s3 0 4 .06a5.61 5.61 0 0 1 1.86.34a3.06 3.06 0 0 1 1.19.8a3.06 3.06 0 0 1 .75 1.1a5.61 5.61 0 0 1 .34 1.9c.05 1 .06 1.37.06 4s-.01 3-.06 4M12 6.87A5.13 5.13 0 1 0 17.14 12A5.12 5.12 0 0 0 12 6.87m0 8.46A3.33 3.33 0 1 1 15.33 12A3.33 3.33 0 0 1 12 15.33"
+                ></path></svg
+              ></a
+            >
+          </div>
+        </div>
+
+        <!-- Kontakt Form -->
+        <div
+          class="flex flex-grow border border-orange-500 px-12 pt-[60px] pb-6"
+        >
+          <form
+            action="post"
+            class="uppercase text-[20px] font-medium w-full space-y-16"
+          >
+            <div
+              class="flex flex-row items-center border-b-[3px] border-orange-500 gap-4"
+            >
+              <label for="name" class="text-orange-500">Name</label>
+              <input
+                type="text"
+                class="bg-transparent text-white w-full border-none focus:ring-0 placeholder:text-[20px] placeholder:font-medium placeholder:uppercase"
+              />
+            </div>
+
+            <div
+              class="flex flex-row items-center border-b-[3px] border-orange-500 gap-4"
+            >
+              <label for="email" class="text-orange-500 text-nowrap"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="bg-transparent text-white w-full border-none focus:ring-0 placeholder:text-[20px] placeholder:font-medium placeholder:uppercase"
+              />
+            </div>
+
+            <div
+              class="flex flex-row items-center border-b-[3px] border-orange-500 gap-4"
+            >
+              <label for="telephone" class="text-orange-500">Telefon</label>
+              <input
+                type="tel"
+                class="bg-transparent text-white w-full border-none focus:ring-0 placeholder:text-[20px] placeholder:font-medium placeholder:uppercase"
+              />
+            </div>
+
+            <div
+              class="flex flex-row items-center border-b-[3px] border-orange-500 gap-4"
+            >
+              <label for="message" class="text-orange-500">Nachricht</label>
+              <input
+                type="text"
+                class="bg-transparent text-white w-full border-none focus:ring-0 placeholder:text-[20px] placeholder:font-medium placeholder:uppercase"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="flex flex-row items-center text-white text-[20px] font-medium uppercase gap-4 px-16 py-6 rounded-2xl bg-orange-500"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 16 16"
+                ><path
+                  fill="white"
+                  d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26l.001.002l4.995 3.178l3.178 4.995l.002.002l.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215l7.494-7.494l1.178-.471z"
+                ></path></svg
+              >Senden</button
+            >
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Presse section -->
+  <section class="bg-black pt-24 pb-16">
+    <div
+      class="bg-orange-500 text-white py-4 mb-24 flex items-center justify-end w-3/12"
+    >
+      <h2 class="pr-8 text-[32px] uppercase font-bold">Presse</h2>
+    </div>
+
+    <div class="flex container mx-auto gap-28">
+      <div class="flex flex-col max-w-[438px] gap-9">
+        <p class="text-white font-medium text-[20px]">
+          Lorem ipsum dolor sit amet consectetur. Lectus vehicula consectetur
+          erat massa a et. Lorem ipsum dolor sit amet consectetur. Lectus
+          vehicula consectetur erat massa a et.
+        </p>
+        <div class="flex flex-row items-center gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 16 16"
+            ><path
+              fill="#ec6b2f"
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
+            ></path></svg
+          >
+          <p class="text-white text-[20px] font-medium">email@gmail.com</p>
+        </div>
+      </div>
+
+      <img
+        src="/presse.jpg"
+        alt="presse"
+        width="700px"
+        height="196px"
+        class="flex flex-grow object-cover w-[700px] h-[196px]"
+      />
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER - I recommend to copy it into layout and delete it here -->
+<footer class="bg-black w-full">
+  <div
+    class="flex container mx-auto justify-between items-center border-t-[1px] border-orange-500"
+  >
+    <p class="flex items-center gap-1 text-sm font-medium text-[#eaeaea]">
+      <span class="text-2xl">&copy;</span> 2023, Peppermint Digital GmBh
+    </p>
+
+    <div class="flex-col flex-1 space-y-[6px] py-[9px] justify-self-end">
+      <ul
+        class="flex space-x-11 text-sm font-medium text-[#f5f5f5] justify-end"
+      >
+        <li><a href="/">UBER UNS</a></li>
+        <li><a href="/">PRESSE</a></li>
+        <li><a href="/">VLOG</a></li>
+        <li><a href="/">IMPRESSUM</a></li>
+      </ul>
+      <ul
+        class="flex space-x-11 text-sm font-medium text-[#f5f5f5] justify-end"
+      >
+        <li><a href="/">PODCAST</a></li>
+        <li><a href="/">TEAM</a></li>
+        <li><a href="/">DOWNLOADS</a></li>
+        <li><a href="/">DATENSCHUTZ</a></li>
+      </ul>
+    </div>
+    <button
+      type="button"
+      class="text-white uppercase text-base font-semibold px-9 py-[6px] bg-[#909090] rounded-[5px] ml-[25px]"
+      >Kontakt</button
+    >
+  </div>
+</footer>
+
+<style>
+  h1 {
+    -webkit-text-stroke: 1px #ec6b2f;
+  }
+</style>
